@@ -1,6 +1,8 @@
 deploy:
   provider: releases
   language: java
+sudo: false
+script: mvn clean verify
   api_key: "GITHUB OAUTH TOKEN"
   file: "FILE TO UPLOAD"
   skip_cleanup: true
